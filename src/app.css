@@ -4,9 +4,9 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  color: #333; /* Cambiado el color del texto principal */
+  background-color: #f0f0f0; /* Cambiado el color de fondo */
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -15,11 +15,11 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #4285f4; /* Cambiado el color de los enlaces */
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #1a73e8; /* Cambiado el color al pasar el mouse sobre los enlaces */
 }
 
 body {
@@ -37,6 +37,9 @@ h1 {
 
 .card {
   padding: 2em;
+  background-color: #fff; /* Cambiado el color de fondo de las tarjetas */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #app {
@@ -53,21 +56,31 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #4caf50; /* Cambiado el color de los botones */
+  color: #fff; /* Cambiado el color del texto de los botones */
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #388e3c; /* Cambiado el color al pasar el mouse sobre los botones */
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+form {
+  display: table;
+  margin: 0 auto;
+  padding: 1em;
+  background-color: #fff; /* Cambiado el color de fondo del formulario */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: #333;
     background-color: #ffffff;
   }
   a:hover {
@@ -75,5 +88,6 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+    color: #333; /* Cambiado el color del texto de los botones en modo claro */
   }
 }
